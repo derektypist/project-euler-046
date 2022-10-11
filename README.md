@@ -40,3 +40,6 @@ User Stories on function `goldbachsOtherConjecture()` taken from [FreeCodeCamp -
 
 The function `goldbachsOtherConjecture()` returns a number.
 
+## Features
+
+Allows the user to show or hide the solution to the problem as described in [Project Euler 046](https://projecteuler.net/problem=46).
