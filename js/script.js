@@ -19,3 +19,15 @@ function isPrime(n) {
     }
     return PRIMES[n] = true;
 }
+
+/*
+    Function to check if the number n can be written as the sum of the prime
+    and twice a square.
+*/
+function isSquarePrimeSum(n) {
+    const upperBound = Math.sqrt(n/2);
+    for (let i=1;i<=upperBound;i++) {
+        if (isPrime(n-2 * (i**2))) return true;
+    }
+    return false;
+}
