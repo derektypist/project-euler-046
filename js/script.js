@@ -31,3 +31,15 @@ function isSquarePrimeSum(n) {
     }
     return false;
 }
+
+/*
+    Function to return the solution to the problem as described in
+    https://projecteuler.net/problem=46
+*/
+function goldbachsOtherConjecture() {
+    let currNum = 3;
+    while (isPrime(currNum) || isSquarePrimeSum(currNum)) {
+        currNum += 2;
+    }
+    return currNum;
+}
