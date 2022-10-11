@@ -35,6 +35,8 @@ function isSquarePrimeSum(n) {
 /*
     Function to return the solution to the problem as described in
     https://projecteuler.net/problem=46
+
+    goldbachsOtherConjecture() returns 5777
 */
 function goldbachsOtherConjecture() {
     let currNum = 3;
@@ -42,4 +44,10 @@ function goldbachsOtherConjecture() {
         currNum += 2;
     }
     return currNum;
+}
+
+// Function to Hide Solution
+function hideSolution() {
+    let txt = "";
+    document.getElementById("solution").innerHTML = txt;
 }
